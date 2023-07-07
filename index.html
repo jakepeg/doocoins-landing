@@ -20,21 +20,21 @@
     }
 
     h1, h2 {
-    text-rendering: optimizeLegibility;
-    color: inherit;
-    font-family: Verdana,Geneva,sans-serif;
-    font-size: 2rem;
-    font-weight: 400;
-    margin: 0 0 1.45rem;
-    padding: 0;
-    word-spacing: -6px;
-}
+      text-rendering: optimizeLegibility;
+      color: inherit;
+      font-family: Verdana,Geneva,sans-serif;
+      font-size: 2rem;
+      font-weight: 400;
+      margin: 0 0 1.45rem;
+      padding: 0;
+      word-spacing: -6px;
+    }
 
-p {
-    font-size: 1.3rem;
-    line-height: 1.5;
-    padding: 0 50px 0 0;
-}
+    p {
+      font-size: 1.3rem;
+      line-height: 1.5;
+      padding: 0 50px 0 0;
+    }
 
     .container {
       max-width: 1200px;
@@ -94,45 +94,39 @@ p {
     }
 
     .column {
-  width: 100%;
-  padding: 10px;
-  box-sizing: border-box;
-}
+      width: 100%;
+      padding: 10px;
+      box-sizing: border-box;
+    }
 
-.column-left {
-  flex: 1;
-}
+    .column-left {
+      flex: 1;
+    }
 
-.column-right {
-  flex: 0 0 320px;
-}
+    .column-right {
+      flex: 0 0 320px;
+    }
 
-.app-image {
-  max-width: 100%;
-  display: block;
-  margin: 0 auto;
-}
+    .app-image {
+      max-width: 100%;
+      display: block;
+      margin: 0 auto;
+    }
 
-.app-image-mobile {
-  display: none; /* Hide the image on larger screens */
-}
+    .app-image-mobile {
+      display: none;
+    }
 
-/* Media query for mobile screens */
-@media (max-width: 768px) {
-  .app-image {
-    display: none; /* Hide the image on mobile screens */
-  }
+    /* Media query for mobile screens */
+    @media (max-width: 768px) {
+      .app-image {
+        display: none;
+      }
 
-  .app-image-mobile {
-    display: block; /* Show the image on mobile screens */
-  }
-}
-
-
-
-
-
-
+      .app-image-mobile {
+        display: block;
+      }
+    }
 
     .footer {
       padding: 20px 0;
@@ -140,64 +134,64 @@ p {
     }
 
     form {
-    margin: 0 0 1.45rem;
-    padding: 0;
-}
+      margin: 0 0 1.45rem;
+      padding: 0;
+    }
 
-.input-early-access {
-    background-color: transparent;
-    border: 1px solid #fff;
-    border-radius: 4px;
-    font-size: 1.5rem;
-    height: 60px;
-    line-height: 42px;
-    margin-bottom: 20px;
-    margin-right: 10px;
-    margin-top: 10px;
-    outline: 0;
-    padding: 8px 16px;
-    text-align: left;
-    vertical-align: middle; /* Added to align with the button */
-}
+    .input-early-access {
+      background-color: transparent;
+      border: 1px solid #fff;
+      border-radius: 4px;
+      font-size: 1.5rem;
+      height: 60px;
+      line-height: 42px;
+      margin-bottom: 20px;
+      margin-right: 10px;
+      margin-top: 10px;
+      outline: 0;
+      padding: 8px 16px;
+      text-align: left;
+      vertical-align: middle;
+    }
 
-.input-early-access::placeholder {
-  color: #ccc;
-}
+    .input-early-access::placeholder {
+      color: #ccc;
+    }
 
-.cta-early-access, .input-early-access {
-    color: #fff;
-    font-weight: 400;
-    width: 250px;
-    vertical-align: middle; /* Added to align with the text field */
-}
+    .cta-early-access, .input-early-access {
+      color: #fff;
+      font-weight: 400;
+      width: 250px;
+      vertical-align: middle;
+    }
 
-.cta-early-access {
-    background-color: #eb5727;
-    border-color: #eb5727;
-    border-radius: 4px;
-    display: inline-block;
-    font-size: 1.5rem;
-    line-height: 1.5;
-    margin-top: -7px;
-    padding: 0.7rem 1rem;
-    text-align: center;
-    text-decoration: none;
-    transition: all .5s;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    vertical-align: middle;
-}
+    .cta-early-access {
+      background-color: #eb5727;
+      border-color: #eb5727;
+      border-radius: 4px;
+      display: inline-block;
+      font-size: 1.5rem;
+      line-height: 1.5;
+      margin-top: -7px;
+      padding: 0.7rem 1rem;
+      text-align: center;
+      text-decoration: none;
+      transition: all .5s;
+      -webkit-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      vertical-align: middle;
+    }
 
-.small {
-  font-size: 1rem;
-  color: #999;
-  margin-top: 0;
-}
+    .small {
+      font-size: 1rem;
+      color: #ccc;
+      margin-top: 0;
+    }
 
-*, :after, :before {
-    box-sizing: inherit;
-}
+    *, :after, :before {
+        box-sizing: inherit;
+    }
   </style>
 </head>
 <body>
@@ -233,7 +227,7 @@ p {
     </main>
 
     <footer class="footer">
-      <p>© 2023 | <a href="https://internetcomputer.org">Built on The Internet Computer</a> | <a href="mailto:hello@doo.co">hello@doo.co</a></p>
+      <p class="small">© 2023 | <a href="https://internetcomputer.org">Built on The Internet Computer</a> | <a href="mailto:hello@doo.co">hello@doo.co</a></p>
     </footer>
   </div>
 </body>
