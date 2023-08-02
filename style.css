@@ -101,6 +101,7 @@ a:hover {
 
 .column-left {
   flex: 1;
+  padding-right: 50px;
 }
 
 .column-right {
@@ -234,6 +235,7 @@ form {
   .column-left {
     width: 100%;
     margin: 0;
+    padding-right: 0;
   }
 
   .privacy {
