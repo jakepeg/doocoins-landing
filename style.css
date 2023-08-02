@@ -20,7 +20,7 @@ h1, h2 {
   font-weight: 400;
   margin: 0 0 1.45rem;
   padding: 0;
-  word-spacing: -6px;
+  /* word-spacing: -6px; */
 }
 
 h3 {
@@ -207,7 +207,7 @@ form {
     font-weight: 400;
     margin: 0 0 1.45rem;
     padding: 0;
-    word-spacing: -6px;
+    /* word-spacing: -6px; */
   }
   
   h3 {
