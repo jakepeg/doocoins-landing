@@ -212,7 +212,6 @@ form {
   line-height: 42px;
   margin-bottom: 20px;
   margin-right: 10px;
-  margin-top: 10px;
   outline: 0;
   padding: 8px 16px;
   text-align: left;
@@ -244,6 +243,11 @@ form {
     box-sizing: inherit;
 }
 
+.orange-link {
+  font-size: 1.3rem;
+  color: #ffffff;
+  text-decoration: underline;
+}
 
 /* Media query for mobile screens */
 @media (max-width: 768px) {

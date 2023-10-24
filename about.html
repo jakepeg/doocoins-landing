@@ -44,11 +44,25 @@
       <div class="column column-right">
         <div class="access-panel">
         <p>Become an early adopter and help shape the future of DooCoins. If you have kids aged 4 - 14, sign up below and we'll email you a link to the app.</p>
-        <form action="https://formspree.io/f/xnqlbvlb" method="POST">
+        <!-- <form action="https://formspree.io/f/xnqlbvlb" method="POST">
           <input type="email" class="input-early-access-col" placeholder="your email" name="_replyto" required>
           <button type="submit" class="cta-early-access-col" id="submit-btn">Get early access</button>
           <p class="small privacy">Your email address will only be used to send you a link to the app and for app updates</p>
-        </form>    
+        </form>     -->
+
+        <form action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="5ba06b93-f080-4191-84c2-a13d3a861ec1">
+          <input type="hidden" name="subject" value="DooCoins Early Adopter Signup">
+          <input type="hidden" name="from_name" value="DooCoins Website">
+          <input type="hidden" name="redirect" value="https://doo.co/thanks.html">
+          <input type="text" class="input-early-access-col" name="name" placeholder="your name" required>
+          <input type="email" class="input-early-access-col" name="email" placeholder="your email" required>
+          <button type="submit" class="cta-early-access-col" id="submit-btn">Get early access</button>
+          <p class="small privacy">Your email address will only be used to send you a link to the app and for app updates</p>
+        </form>
+
+
+
         </div> 
       </div>
     </main>
