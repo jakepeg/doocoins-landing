@@ -96,6 +96,16 @@ p, li {
   width: 100%;
 }
 
+.dooza-banner {
+  width: 100%;
+  margin-top: 70px;
+  border: 1px white solid;
+}
+
+.banner {
+  opacity: 1;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -199,7 +209,7 @@ a:hover {
 .footer {
   padding: 0;
   text-align: left;
-  margin-top: 70px;
+  margin-top: 50px;
 }
 
 .footer a{
