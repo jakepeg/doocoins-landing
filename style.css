@@ -344,6 +344,8 @@ form {
   .doozas-4 {display: block}
   .doozas-3 {display: none}
   .timeline-image {display: block}
+  .banner-mobile {display: none}
+  .banner {display: block}
 }
 
 /* Media query for mobile screens */
@@ -355,6 +357,8 @@ form {
   .doozas-4 {display: none}
   .doozas-3 {display: block}
   .timeline-image {display: none}
+  .banner-mobile {display: block}
+  .banner {display: none}
 
   p, li {
     font-size: 1.2rem;
