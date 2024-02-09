@@ -202,6 +202,10 @@ a:hover {
   margin-top: 70px;
 }
 
+.footer a{
+  font-size: 1rem;
+}
+
 form {
   margin: 0 0 1.45rem;
   padding: 0;
