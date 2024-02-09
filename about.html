@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="DooCoins empowers children with financial wisdom and cultivates savings habits and make informed investment choices.">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="burger-menu.css">
   <link rel="icon" href="logo.svg" type="image/svg+xml">
   <title>DooCoins Kids Rewards dApp - ABOUT</title>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-RWNWT85LRH"></script>
@@ -12,7 +13,6 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-RWNWT85LRH');
 </script>
 
@@ -24,16 +24,25 @@
         <img src="logo.svg" class="logo-img" alt="doo logo">
         <h1 class="logo-type">DooCoins</h1>
       </a>
-      <ul class="menu">
+      <menu class="menu">
         <li><a href="/">HOME</a></li>
-        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="about.html" class="active">ABOUT</a></li>
         <li><a href="faq.html">FAQ</a></li>
-      </ul>
+        <!-- <li><a href="dooza-nft.html">DOOZA NFTs</a></li> -->
+      </menu>
+      <menu class="burger">
+        <input id="menuToggle" type="checkbox"/>
+        <label for="menuToggle"></label>
+        <li><a class="h1" href="/">HOME</a></li>
+        <li><a class="h1" href="about.html">ABOUT</a></li>
+        <li><a class="h1" href="faq.html">FAQ</a></li>
+        <!-- <li><a class="h1" href="dooza-nft.html">DOOZA NFTs</a></li> -->
+      </menu>
     </header>
 
     <main class="main">
       <div class="column column-left">
-        <h2>We aspire to empower children with financial wisdom, cultivate savings habits and make informed investment choices.</h2>
+        <h2>Empower your children with financial wisdom, cultivate savings habits and make informed investment choices, one DooCoin at a time.</h2>
         <p>DooCoins is in its early stages, an MVP taking its first steps. Our primary focus has been on constructing a robust blockchain-based product that encompasses fundamental elements such as task and reward lists, a secure wallet, and goal-setting capabilities.</p>
         <p>In our development pipeline, we have exciting features in store, including a dedicated kids' version of the app. This version allows children to submit completed tasks and request rewards, which can then be verified by parents using the parent app.</p>
         <p>Explore our timeline below to trace our journey to this point and to gain insight into our upcoming medium-term plans.</p>
@@ -41,7 +50,7 @@
       </div>
       <div class="column column-right">
         <div class="access-panel">
-        <p>Become an early adopter and help shape the future of DooCoins. If you have kids aged 4 - 14, sign up below.</p>
+        <p>Become an early adopter and help shape the future of DooCoins. If you have school aged kids then sign up below.</p>
         <form action="https://api.web3forms.com/submit" method="POST">
           <input type="hidden" name="access_key" value="5ba06b93-f080-4191-84c2-a13d3a861ec1">
           <input type="hidden" name="subject" value="DooCoins Early Adopter Signup">

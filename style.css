@@ -23,6 +23,16 @@ h1, h2 {
   /* word-spacing: -6px; */
 }
 
+.h1 {
+  text-rendering: optimizeLegibility;
+  color: inherit;
+  font-family: Verdana,Geneva,sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin: 0 0 1.45rem;
+  padding: 0;
+}
+
 h3 {
   text-rendering: optimizeLegibility;
   color: inherit;
@@ -34,6 +44,56 @@ h3 {
 p, li {
   font-size: 1.3rem;
   line-height: 1.5;
+}
+
+.dooza-title {
+  font-family: "Luckiest Guy", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 7rem;
+  text-align: center;
+  letter-spacing: -0.5rem;
+  text-shadow:
+  3px  3px 0 #000,
+ -1px -1px 0 #000,  
+  1px -1px 0 #000,
+ -1px  1px 0 #000,
+  1px  1px 0 #000;
+  margin-bottom: -50px;
+}
+
+.dooza-subtitle {
+  font-family: "Luckiest Guy", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2.5rem;
+  text-align: center;
+  letter-spacing: 0rem;
+  text-shadow:
+  3px  3px 0 #000,
+ -1px -1px 0 #000,  
+  1px -1px 0 #000,
+ -1px  1px 0 #000,
+  1px  1px 0 #000;
+}
+
+.green {color: #0CFFD3}
+.pink {color: #ff51b0}
+.blue {color: #00D1FF}
+.white {color: #ffffff}
+
+.doug-img {
+  border-radius: 47px;
+  width: 300px;
+}
+
+.loch-img {
+  border-radius: 70px;
+  width: 100%;
+}
+
+.dooza-img {
+  width: 100%;
 }
 
 .container {
@@ -54,6 +114,7 @@ p, li {
   display: flex;
   align-items: center;
   text-decoration: none;
+  opacity: 1;
 }
 
 .logo-img {
@@ -81,12 +142,23 @@ p, li {
 a {
   color: white;
   text-decoration: none;
-  font-size: 15px;
-    font-weight: 500;
+  font-size: 1.3rem;
+  font-weight: 500;
+  opacity: 0.7;
 }
 
 a:hover {
   color: white;
+  text-decoration: underline;
+  opacity: 1;
+}
+
+.active {
+  opacity: 1;
+  text-decoration: none;
+}
+
+.underline {
   text-decoration: underline;
 }
 
@@ -119,6 +191,7 @@ a:hover {
 
 .app-image-mobile {
   width: calc(100% - 20px);
+  max-width: 320px;
   margin: 10px;
   display: none;
 }
@@ -249,11 +322,24 @@ form {
   text-decoration: underline;
 }
 
+/* Media query for larger screens */
+@media (min-width: 768px) {
+  .menu {visibility: visible}
+  .burger {visibility: hidden}
+  .doozas-4 {display: block}
+  .doozas-3 {display: none}
+  .timeline-image {display: block}
+}
+
 /* Media query for mobile screens */
 @media (max-width: 768px) {
-  .tag {
-    display: none;
-  }
+  .header {margin-top: 0}
+  .story {display: none}
+  .menu {visibility: hidden}
+  .burger {visibility: visible}
+  .doozas-4 {display: none}
+  .doozas-3 {display: block}
+  .timeline-image {display: none}
 
   p, li {
     font-size: 1.2rem;
@@ -269,7 +355,6 @@ form {
     font-weight: 400;
     margin: 0 0 1.45rem;
     padding: 0;
-    /* word-spacing: -6px; */
   }
   
   h3 {
@@ -280,19 +365,9 @@ form {
     font-weight: 600;
   }
 
-
-
-  .app-image {
-    display: none;
-  }
-
-  .app-image-mobile {
-    display: block;
-  }
-
-  .column-right {
-    display: none;
-  }
+  .app-image {display: none}
+  .app-image-mobile {display: block}
+  .column-right {display: none}
 
   .column-left {
     width: 100%;
