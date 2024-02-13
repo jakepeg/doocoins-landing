@@ -16,8 +16,8 @@ h1, h2 {
   text-rendering: optimizeLegibility;
   color: inherit;
   font-family: Verdana,Geneva,sans-serif;
-  font-size: 2rem;
-  font-weight: 400;
+  font-size: 1.5rem;
+  font-weight: 600;
   margin: 0 0 1.45rem;
   padding: 0;
   /* word-spacing: -6px; */
@@ -31,6 +31,12 @@ h1, h2 {
   font-weight: 400;
   margin: 0 0 1.45rem;
   padding: 0;
+}
+
+.h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 2.7rem;
 }
 
 h3 {
@@ -98,7 +104,7 @@ p, li {
 
 .dooza-banner {
   width: 100%;
-  margin-top: 70px;
+  margin-top: 50px;
   border: 1px white solid;
 }
 
@@ -121,7 +127,7 @@ p, li {
   align-items: center;
   justify-content: space-between;
   padding: 10px 0;
-  margin-top: 20px;
+  margin-top: 0px;
 }
 
 .logo-group {
@@ -150,7 +156,7 @@ p, li {
 }
 
 .menu li {
-  margin-left: 10px;
+  margin-left: 20px;
 }
 
 a {
@@ -179,7 +185,7 @@ a:hover {
 .main {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 40px;
+  margin-top: 100px;
 }
 
 .column {
@@ -364,6 +370,18 @@ form {
   .banner-mobile {display: block}
   .banner {display: none}
 
+  .main {
+    margin-top: 20px;
+  }
+
+  .logo-group {
+    margin-top: -40px;
+  }
+
+  .dooza-banner {
+    margin-top: 0px;
+  }
+
   p, li {
     font-size: 1.2rem;
     line-height: 1.3;
@@ -378,6 +396,12 @@ form {
     font-weight: 400;
     margin: 0 0 1.45rem;
     padding: 0;
+  }
+
+  .h2 {
+    font-size: 1.9rem;
+    font-weight: 500;
+    line-height: 2.3rem;
   }
   
   h3 {
@@ -406,4 +430,13 @@ form {
     width: 100%;
   }
 
+
+  .dooza-title {
+    font-size: 5rem;
+  }
+  
+  .dooza-subtitle {
+    font-size: 2rem;
+    margin-left: 10px;
+  }
 }
