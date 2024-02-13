@@ -371,12 +371,16 @@ form {
   .banner-mobile {display: block}
   .banner {display: none}
 
+  .menu {
+    display: none;
+  }
+
   .main {
-    margin-top: 20px;
+    margin-top: 40px;
   }
 
   .logo-group {
-    margin-top: -40px;
+    margin-top: -10px;
   }
 
   .dooza-banner {
