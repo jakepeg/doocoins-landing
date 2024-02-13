@@ -66,6 +66,7 @@ p, li {
  -1px  1px 0 #000,
   1px  1px 0 #000;
   margin-bottom: -50px;
+  margin-top: -50px;
 }
 
 .dooza-subtitle {
@@ -433,6 +434,7 @@ form {
 
   .dooza-title {
     font-size: 5rem;
+    margin-top: -30px;
   }
   
   .dooza-subtitle {
