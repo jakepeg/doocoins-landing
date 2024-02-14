@@ -34,7 +34,7 @@ h1, h2 {
 }
 
 .h2 {
-  font-size: 2rem;
+  font-size: 1.9rem;
   font-weight: 600;
   line-height: 2.7rem;
 }
@@ -363,6 +363,7 @@ form {
 @media (max-width: 768px) {
   .header {margin-top: 0}
   .story {display: none}
+  .nomobile {display: none}
   .menu {visibility: hidden}
   .burger {visibility: visible}
   .doozas-4 {display: none}
