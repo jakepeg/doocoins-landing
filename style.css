@@ -326,6 +326,12 @@ form {
   margin-top: 30px;
 }
 
+.game-title {
+  margin: 0 auto 0px auto;
+  display: block;
+  width: 100%;
+}
+
 .access-panel {
   background-color: #0b344e;
   border-radius: 20px;
