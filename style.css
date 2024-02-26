@@ -363,6 +363,7 @@ form {
   .timeline-image {display: block}
   .banner-mobile {display: none}
   .banner {display: block}
+  .sorry {display: none}
 }
 
 /* Media query for mobile screens */
@@ -377,6 +378,7 @@ form {
   .timeline-image {display: none}
   .banner-mobile {display: block}
   .banner {display: none}
+  .sorry {display: block}
 
   .menu {
     display: none;
