@@ -4,8 +4,10 @@
   <meta charset="UTF-8">
   <meta name="robots" content="noindex, nofollow" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="1200x500.css">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="burger-menu.css">
+
   <link rel="icon" href="logo.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,7 +24,7 @@
 </script>
 
 </head>
-<body>
+<body onLoad="doAnim()">
   <div class="container">
     <header class="header">
       <a class="logo-group" href="/">
@@ -48,25 +50,70 @@
 
     <main class="main">
       <div class="column">
-        <h2 class="dooza-title pink">DOOZA</h2>
-        <h3 class="dooza-subtitle green">NFT COLLECTION</h3>
+        <div class="dooza-title-group">
+          <h2 class="dooza-title pink">DOOZA</h2>
+          <h3 class="dooza-subtitle green">NFT COLLECTION</h3>
+        </div>
+        <div id="banner">
+          <div class="title"></div>
+          <div class="subtitle"></div>
+          <div class="grass"></div>
+          <div class="sky"></div>
+          <div id="doozas">
+              <div id="dooza-1" class="dooza-1"> </div>
+              <div id="dooza-2" class="dooza-2"> </div>
+              <div id="dooza-3" class="dooza-3"> </div>
+              <div id="dooza-4" class="dooza-4"> </div>
+              <div id="dooza-5" class="dooza-5"> </div>
+          </div>
+          <div id="speech-1" class="speech speech-1"> </div>
+          <div id="speech-2" class="speech speech-2"> </div>
+          <div id="speech-3" class="speech speech-3"> </div>
+          <div id="speech-4" class="speech speech-4"> </div>
+          <div id="speech-5" class="speech speech-5"> </div>
+      </div>
+
+
+
         <p>Dooza's are a diverse bunch, each possessing a unique personality ranging from cheeky and jovial to serious and focused. What binds them together is their unwavering eagerness to please, a strong work ethic, and a genuine care for the environment and all living beings.</p>
         <img class="dooza-img doozas-3" alt="Dooza Images" src="dooza/doozas-3.png" />
         <img class="dooza-img doozas-4" alt="Dooza Images" src="dooza/doozas-4.png" />
         <p>The Dooza NFT collection supports DooCoins, the kids rewards dApp built on the ICP. The characteristics and traits of the Dooza's are a perfect inspiration for kids to earn DooCoins through completing chores, good behaviour and personal achievements. Integration of Dooza reward badges into the DooCoins app is in progress. Soon, you'll even be able to adopt your very own Dooza, granting access to exclusive features within the DooCoins app.</p>
         <p>Want to know more about airdrops, minting, and upcoming Dooza adventures? Follow <a href="https://twitter.com/DooCoins" class="underline">@DooCoins on X</a> to stay ahead of the curve and unlock a world of possibilities for yourself and your kids!</p>
-        
       </div>
-
-
-
-
-
-
     </main>
     <footer class="footer">
       <p class="small"><a href="https://internetcomputer.org">Built on The Internet Computer</a> | <a href="mailto:hello@doo.co">hello@doo.co</a> | <a href="https://twitter.com/DooCoins">X @DooCoins</a> | <a href="DooCoinsWhitePaper.pdf" target="_blank">White Paper</a> | <a href="privacy.html">Privacy Policy</a></p>
     </footer>
   </div>
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+  <script>
+  doAnim = function() {			
+      var TL1 = new TimelineMax({repeat:1, repeatDelay:2.5});
+    TL1.set("#banner", {visibility:"visible"})
+          .to('.sky', 100, {x: -1375})
+          .to('.title', 2, {opacity: 1}, '-=100')
+          .from('#dooza-1', 1.2, {scale: 0, ease: Bounce.easeOut, y: +60 }, '-=100')
+          .from('#dooza-3', .8, {scale: 0, ease: Bounce.easeOut, y: +60 }, '-=100')
+          .from('#dooza-5', 1, {scale: 0, ease: Bounce.easeOut, y: +10 }, '-=100')
+          .from('#dooza-2', .5, {ease: Bounce.easeOut, y: +200 }, '-=99')
+          .from('#dooza-4', .7, {ease: Bounce.easeOut, y: +200 }, '-=99')
+          .to('#speech-1', .7, {opacity: 1, ease: Bounce.easeOut}, '-=96')
+          .to('#speech-1', .1, {opacity: 0}, '-=95')
+          .to('#speech-3', .7, {opacity: 1, ease: Bounce.easeOut}, '-=94')
+          .to('#speech-3', .1, {opacity: 0}, '-=93')
+          .to('#speech-2', .7, {opacity: 1, ease: Bounce.easeOut}, '-=92')
+          .to('#speech-2', .1, {opacity: 0}, '-=91')
+          .to('#speech-5', .7, {opacity: 1, ease: Bounce.easeOut}, '-=90')
+          .to('#speech-5', .1, {opacity: 0}, '-=89')
+          .to('#speech-4', .7, {opacity: 1, ease: Bounce.easeOut}, '-=87')
+          .to('#speech-4', .1, {opacity: 0}, '-=86')
+          .to('.subtitle', 1, {opacity: 1}, '-=84');
+  };
+</script>
+
+
+
 </body>
 </html>

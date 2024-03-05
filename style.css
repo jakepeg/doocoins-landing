@@ -354,7 +354,22 @@ form {
   text-decoration: underline;
 }
 
+
+
+
 /* Media query for larger screens */
+@media (min-width: 1220px) {
+  #banner {display: block}
+  .dooza-title-group {display: none}
+}
+
+@media (max-width: 1220px) {
+  #banner {display: none}
+  .dooza-title-group {display: block; margin-bottom: 30px}
+}
+
+
+/* Media query for large screens */
 @media (min-width: 768px) {
   .menu {visibility: visible}
   .burger {visibility: hidden}
