@@ -359,7 +359,7 @@ form {
 
 /* Media query for larger screens */
 @media (min-width: 1220px) {
-  #banner {display: block}
+  #banner {display: block; margin-bottom: 30px}
   .dooza-title-group {display: none}
 }
 
