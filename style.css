@@ -52,6 +52,50 @@ p, li {
   line-height: 1.5;
 }
 
+
+.button-container {
+  display: flex;
+  justify-content: space-between; /* Space buttons evenly */
+  width: fit-content; /* Container shrinks to fit buttons */
+}
+
+.button-container button {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 0 5px; /* Add spacing between buttons */
+  position: relative; /* Needed for hover effect */
+}
+
+.button-container button:hover,
+.button-container button.active {
+  background-color: white;
+  color: black;
+}
+
+.button-container button:hover::after,
+.button-container button.active::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white; /* Overlay for hover effect */
+  opacity: 0; /* Semi-transparent white */
+  z-index: -1; /* Behind button text */
+}
+
+.button-container button {
+  /* Lozenge shape (adjust border radius as needed) */
+  border-radius: 25px;
+}
+
+
+
 .dooza-title {
   font-family: "Luckiest Guy", cursive;
   font-weight: 400;
@@ -275,6 +319,7 @@ form {
   -ms-user-select: none;
   user-select: none;
   vertical-align: middle;
+  cursor: pointer;
 }
 
 .cta-early-access-col, .input-early-access-col {
