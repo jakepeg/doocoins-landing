@@ -366,6 +366,31 @@ form {
   color: #ccc;
 }
 
+.cta-entrepot {
+  background-color: #eb5727;
+  border-color: #eb5727;
+  color: #ffffff;
+  border-radius: 4px;
+  display: inline-block;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-top: -7px;
+  padding: 0.7rem 1rem;
+  text-align: center;
+  text-decoration: none;
+  transition: all .5s;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.cta-container {
+  display: flex;
+  justify-content: center;
+}
+
 .timeline-image {
   margin-bottom: 60px;
   margin-top: 30px;
