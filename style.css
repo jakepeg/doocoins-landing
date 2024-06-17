@@ -424,7 +424,12 @@ form {
   text-decoration: underline;
 }
 
+.light {
+  font-weight: 300;
+}
 
+.title {display: block}
+.title-mobile {display: none}
 
 
 /* Media query for larger screens */
@@ -539,4 +544,9 @@ form {
     font-size: 2rem;
     margin-left: 10px;
   }
+
+  .title {display: none}
+  .title-mobile {display: block}
+
+
 }
