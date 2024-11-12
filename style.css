@@ -47,16 +47,27 @@ h3 {
   font-weight: 600;
 }
 
+h4 {
+  text-rendering: optimizeLegibility;
+  color: inherit;
+  font-family: Verdana,Geneva,sans-serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: -15px;
+}
+
 p, li {
   font-size: 1.3rem;
   line-height: 1.5;
 }
 
-
 .button-container {
   display: flex;
-  justify-content: space-between; /* Space buttons evenly */
-  width: fit-content; /* Container shrinks to fit buttons */
+  flex-wrap: wrap; /* Allow buttons to wrap to the next line */
+  gap: 10px; /* Use gap for spacing between buttons */
+  width: 100%; /* Full-width container to handle wrapping */
+  max-width: fit-content; /* Container adjusts based on button size */
+  margin-top: 20px;
 }
 
 .button-container button {
@@ -64,10 +75,12 @@ p, li {
   border: 2px solid white;
   color: white;
   padding: 10px 20px;
-  font-size: 16px;
+  font-size: 20px;
+  border-radius: 25px;
   cursor: pointer;
   margin: 0 5px; /* Add spacing between buttons */
   position: relative; /* Needed for hover effect */
+  white-space: nowrap;
 }
 
 .button-container button:hover,
@@ -88,13 +101,6 @@ p, li {
   opacity: 0; /* Semi-transparent white */
   z-index: -1; /* Behind button text */
 }
-
-.button-container button {
-  /* Lozenge shape (adjust border radius as needed) */
-  border-radius: 25px;
-}
-
-
 
 .dooza-title {
   font-family: "Luckiest Guy", cursive;
@@ -230,7 +236,7 @@ a:hover {
 .main {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 100px;
+  margin-top: 60px;
 }
 
 .column {
@@ -514,6 +520,14 @@ form {
     font-family: Verdana,Geneva,sans-serif;
     font-size: 1.3rem;
     font-weight: 600;
+  }
+
+  h4 {
+    text-rendering: optimizeLegibility;
+    color: inherit;
+    font-family: Verdana,Geneva,sans-serif;
+    font-size: 1.3rem;
+    font-weight: 300;
   }
 
   .app-image {display: none}
