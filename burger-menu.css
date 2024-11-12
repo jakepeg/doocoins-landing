@@ -1,5 +1,6 @@
 .burger {
   position: absolute;
+  z-index: 1000;
   top: 0px;
   right: 1em;
   -webkit-user-select: none;
