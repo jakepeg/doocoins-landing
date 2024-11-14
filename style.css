@@ -240,7 +240,7 @@ a:hover {
 
 .active {
   opacity: 1;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 .underline {
