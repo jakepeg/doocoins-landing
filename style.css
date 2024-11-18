@@ -34,8 +34,8 @@ h1, h2 {
 }
 
 .h2 {
-  font-size: 1.9rem;
-  font-weight: 600;
+  font-size: 2.2rem;
+  font-weight: 500;
   line-height: 2.7rem;
 }
 
@@ -528,19 +528,13 @@ form {
   }
   
   h3 {
-    text-rendering: optimizeLegibility;
-    color: inherit;
-    font-family: Verdana,Geneva,sans-serif;
     font-size: 1.3rem;
     font-weight: 600;
   }
 
   h4 {
-    text-rendering: optimizeLegibility;
-    color: inherit;
-    font-family: Verdana,Geneva,sans-serif;
-    font-size: 1.3rem;
-    font-weight: 300;
+    font-size: 1.1rem;
+    font-weight: 600;
   }
 
   .app-image {display: none}
