@@ -245,6 +245,8 @@ a:hover {
 
 .underline {
   text-decoration: underline;
+  color: #ffffff;
+  font-weight: 700;
 }
 
 .main {
