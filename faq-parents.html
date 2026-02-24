@@ -3,100 +3,234 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Empower your kids with financial literacy and smart saving habits using DooCoins, a reward system that promotes responsibility through Web3 transparency.">
-  <meta name="keywords" content="DooCoins, financial literacy for kids, reward system for children, Web3 technology for families, positive reinforcement app, kids organizational skills, blockchain parenting tools, earning rewards for chores">
+  <meta name="description" content="Parent App FAQ — How to use the DooCoins Parent app to manage tasks, rewards, and your children's accounts.">
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="burger-menu.css">
   <link rel="icon" href="logo.svg" type="image/svg+xml">
-  <title>DooCoins Kids Rewards System - FAQ</title>
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RWNWT85LRH"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-RWNWT85LRH');
-</script>
-
+  <title>Parent App FAQ — DooCoins</title>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RWNWT85LRH"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-RWNWT85LRH');
+  </script>
 </head>
 <body>
-  <div class="container">
-    <header class="header">
-      <a class="logo-group" href="/">
-        <img src="logo.svg" class="logo-img" alt="doo logo">
-        <h1 class="logo-type">DooCoins</h1>
+
+  <header class="header">
+    <nav class="nav container">
+      <a class="logo" href="/">
+        <img src="logo.svg" alt="DooCoins" class="logo-icon">
+        <span class="logo-text">DooCoins</span>
       </a>
-      <menu class="menu">
-        <li><a href="/">Home</a></li>
-        <li><a href="faq.html" class="active">FAQ</a></li>
-        <li><a href="whitepaper.html">Whitepaper</a></li>
-        <div class="connect-dropdown">
-          <a href="#" class="connect-button">Connect</a>
-          <div class="submenu">
-            <a href="connect-parent.html" class="submenu-button">Parent</a>
-            <a href="connect-kids.html" class="submenu-button">Child</a>
-          </div>
-        </div>
+      <div class="nav-links">
+        <a href="/#features">Features</a>
+        <a href="/#family-plus">Family+</a>
+        <a href="/#how-it-works">How It Works</a>
+        <a href="faq.html" class="active">FAQ</a>
+      </div>
+      <a href="/#download" class="btn btn-primary nav-cta">Download</a>
+      <button class="burger-toggle" id="burgerToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="/#features">Features</a>
+      <a href="/#family-plus">Family+</a>
+      <a href="/#how-it-works">How It Works</a>
+      <a href="faq.html">FAQ</a>
+      <a href="/#download" class="btn btn-primary">Download</a>
+    </div>
+  </header>
 
-      </menu>
-      <menu class="burger">
-        <input id="menuToggle" type="checkbox"/>
-        <label for="menuToggle"></label>
-        <li><a class="h1" href="/">Home</a></li>
-        <li><a class="h1" href="faq.html">FAQ</a></li>
-        <li><a class="h1" href="whitepaper.html">Whitepaper</a></li>
-        <li><a class="h1" href="connect-parent.html">Parent App Connect</a></li>
-        <li><a class="h1" href="connect-kids.html">Kids App Connect</a></li>
-      </menu>
-    </header>
+  <div class="page-header">
+    <div class="container">
+      <h1>Frequently Asked Questions</h1>
+    </div>
+  </div>
 
-    <main class="main">
+  <div class="container">
+    <div class="faq-tabs">
+      <a href="faq.html" class="faq-tab">General</a>
+      <a href="faq-parents.html" class="faq-tab active">Parent App</a>
+      <a href="faq-kids.html" class="faq-tab">Kids App</a>
+    </div>
+  </div>
 
+  <div class="faq-content">
 
+    <details class="faq-item">
+      <summary>How do I install DooCoins Parent?</summary>
+      <div class="faq-answer">
+        <p>Download DooCoins Parent for free from the <a href="https://apps.apple.com/app/doocoins-parent">App Store</a>. The app requires iOS 15.0 or later.</p>
+      </div>
+    </details>
 
-
-
-      <div class="column column-left">
-
-        <div class="button-container">
-          <a href="faq.html">
-            <button>General FAQ</button>
-          </a>
-          <a href="faq-parents.html">
-            <button class="active">Parent App FAQ</button>
-          </a>
-          <a href="faq-kids.html">
-            <button>Kids App FAQ</button>
-          </a>
-        </div>
-        <h3>How do I install DooCoins?</h3>
-        <p>See <a class="underline" href="connect-parent.html">Connect to the Parent App</a> for instructions on how to install the Parent App</p>
-        <h3>How do I sign up / login?</h3>
-        <p>DooCoins uses NFID.one for authentication, this allows for passkey sign up and login, so that it's not necessary to create and remember usernames and passwords. In the app on the login screen, tap Connect and follow the NFID steps to access the app.</p>
-        <h3>How does DooCoins work?</h3>
-        <p>After installing the app and setting up an account (see above) you can follow these steps:</p>
+    <details class="faq-item">
+      <summary>How do I get started?</summary>
+      <div class="faq-answer">
         <ol>
-          <li><strong>Add a child</strong> - To get to the child list screen, either tap on the logo top left, or open the menu by tapping the profile icon top right and select “my children”. On the child list screen, tap the plus icon button, enter a name or nickname of the child and tap “add”.</li>
-          <li><strong>Modify a child</strong> - To edit or remove the child, swipe on the child name on the "my children" screen.</li>
-          <li><strong>Create tasks</strong> - It's good to get your child involved in creating tasks and rewards. Tasks are basically how children earn DooCoins. On the child list screen, tap on the child name, then tap on the tasks icon (middle icon the bottom navigation). Tap the plus icon button, enter the name of the task and a value and tap “add”. The value of DooCoins is decided by the parent, but we find it works if we put a value of ~10 cents = 1 DooCoin. To edit or remove the task, swipe on the task name.</li>
-          <li><strong>Create rewards</strong> - Rewards are basically how children spend DooCoins. Tap on the rewards icon (star icon the bottom navigation). Tap the plus icon button, enter the name of the reward and a value and tap “add”. To edit or remove the task, swipe on the reward name.</li>
-          <li><strong>Set a goal</strong> - On the rewards list screen, swipe a reward and select Goal.</li>
-          <li><strong>Approve tasks</strong> - On the tasks list screen, swipe on a task and select Approve.</li>
-          <li><strong>Claim rewards</strong> - On the rewards screen, if the child has enough DooCoins, swipe on the reward and select Claim. If the reward is set as the child goal, then you can also tap the Claim button on the credit card.</li>
-          <li><strong>Invite a child</strong> - To invite a child to use the kids version of DooCoins, swipe on the child name on the "my children" screen and tap "Invite". A temporary code will be displayed, this code can be used to login to the kids app. See <a class="underline" href="faq-kids.html">Kids App FAQ</a> for more information.</li>
-          <li><strong>Approve / Decline requests</strong> - If a child completes a task or wants to redeem a reward in the Kids App, the parent will have to Approve / Decline the request. In the Parent App, tap on the Bell icon then swipe on a request to approve or decline it.</li>
-
+          <li><strong>Add a child</strong> &mdash; On the home screen, tap the plus (+) button, enter your child's name or nickname, and tap "Add".</li>
+          <li><strong>Create tasks</strong> &mdash; Tap on a child, then tap the tasks icon in the bottom navigation. Tap the plus (+) button to add a task with a name and DooCoin value.</li>
+          <li><strong>Create rewards</strong> &mdash; Tap the rewards icon (star) in the bottom navigation. Tap the plus (+) button to add a reward with a name and DooCoin value.</li>
+          <li><strong>Approve tasks</strong> &mdash; When a task is completed, tap the menu icon (three dots) on the task and select "Approve" to award the coins. If your child uses the Kids App, you'll receive approval requests automatically.</li>
+          <li><strong>Set goals</strong> &mdash; On the rewards screen, tap the menu icon (three dots) on a reward and select "Set as goal" to set it as your child's savings target.</li>
+          <li><strong>Claim rewards</strong> &mdash; When your child has earned enough DooCoins, tap the menu icon (three dots) on the reward and select "Claim", or tap the Claim button on the balance card.</li>
         </ol>
       </div>
-      <div class="column column-right">
-        <a href="https://youtu.be/erIM8kGC7iU" target="_blank" class="banner"><img class="app-image" src="app-youtube.png" alt="App Screenshot Yuotube"></a>
+    </details>
+
+    <details class="faq-item">
+      <summary>Do I need to create an account?</summary>
+      <div class="faq-answer">
+        <p>No. The free version works immediately with no sign-up or login required. Your data is stored locally on your device.</p>
+        <p>If you subscribe to Family+, you'll sign in with Internet Identity to enable cloud sync across devices. Internet Identity uses passkey authentication &mdash; no usernames or passwords to remember.</p>
       </div>
-    </main>
-    <footer class="footer">
-      <p class="small"><a href="https://internetcomputer.org">Built on The Internet Computer</a> | <a href="mailto:hello@doo.co">hello@doo.co</a> | <a href="https://twitter.com/DooCoins">X @DooCoins</a> | <a href="privacy.html">Privacy Policy</a></p>
-    </footer>
+    </details>
+
+    <details class="faq-item">
+      <summary>How does the free version work?</summary>
+      <div class="faq-answer">
+        <p>The free version gives you everything you need to get started:</p>
+        <ul>
+          <li>Unlimited children, tasks, and rewards</li>
+          <li>Track each child's coin balance</li>
+          <li>Set goals so kids can see their progress</li>
+          <li>View the last 20 transactions per child</li>
+          <li>Works completely offline</li>
+          <li>No account or login required</li>
+        </ul>
+        <p>All data is stored locally on your device. The free version is single-device only.</p>
+      </div>
+    </details>
+
+    <details class="faq-item">
+      <summary>What is Family+ and what do I get?</summary>
+      <div class="faq-answer">
+        <p>Family+ is the premium subscription ($2.99/month) that unlocks the full family experience:</p>
+        <ul>
+          <li><strong>Kids App</strong> &mdash; Let your children use the DooCoins Kids companion app on their own device</li>
+          <li><strong>Approval Requests</strong> &mdash; Receive task completion and reward claim requests from your child's device</li>
+          <li><strong>Push Notifications</strong> &mdash; Get instant alerts for requests and approvals</li>
+          <li><strong>Cloud Sync</strong> &mdash; Your data syncs securely across all your devices</li>
+          <li><strong>Family Sharing</strong> &mdash; Share children with co-parents, grandparents, or caregivers</li>
+          <li><strong>ToDoos</strong> &mdash; One-off tasks that archive when done</li>
+          <li><strong>Weekly Allowances</strong> &mdash; Automatic recurring coin payments</li>
+          <li><strong>Routines</strong> &mdash; Group tasks together (e.g. "Morning Routine")</li>
+          <li><strong>Unlimited Transaction History</strong></li>
+        </ul>
+        <p>You can subscribe from within the app. Apple Family Sharing is supported.</p>
+      </div>
+    </details>
+
+    <details class="faq-item">
+      <summary>How do I create tasks and rewards?</summary>
+      <div class="faq-answer">
+        <p><strong>Tasks</strong> (how children earn DooCoins):</p>
+        <ol>
+          <li>Tap on a child from the home screen</li>
+          <li>Tap the tasks icon in the bottom navigation</li>
+          <li>Tap the plus (+) button</li>
+          <li>Enter a task name and DooCoin value, then tap "Add"</li>
+          <li>To edit or delete a task, tap the menu icon (three dots) on the task</li>
+        </ol>
+        <p><strong>Rewards</strong> (how children spend DooCoins):</p>
+        <ol>
+          <li>Tap the rewards icon (star) in the bottom navigation</li>
+          <li>Tap the plus (+) button</li>
+          <li>Enter a reward name and DooCoin value, then tap "Add"</li>
+          <li>To edit or delete a reward, tap the menu icon (three dots) on the reward</li>
+        </ol>
+        <p>The value of a DooCoin is up to you. We find it works well to set roughly 10 cents = 1 DooCoin, but choose whatever works for your family.</p>
+      </div>
+    </details>
+
+    <details class="faq-item">
+      <summary>How do I approve tasks?</summary>
+      <div class="faq-answer">
+        <p>There are two ways to approve tasks:</p>
+        <ul>
+          <li><strong>Manually:</strong> On the tasks screen, tap the menu icon (three dots) on a task and select "Approve". The DooCoins will be added to your child's balance.</li>
+          <li><strong>Via requests (Family+):</strong> If your child uses the Kids App, they can request task approval. Tap the bell icon in the Parent App to see pending requests, then tap to approve or decline.</li>
+        </ul>
+      </div>
+    </details>
+
+    <details class="faq-item">
+      <summary>How do I invite my child to the Kids App?</summary>
+      <div class="faq-answer">
+        <p>The Kids App is a Family+ feature. To invite a child:</p>
+        <ol>
+          <li>On the home screen, tap the menu icon (three dots) on your child's name and select "Invite"</li>
+          <li>A <strong>magic code</strong> (4-digit PIN) will be displayed &mdash; this code expires after 60 minutes</li>
+          <li>A QR code is also shown &mdash; scan it with your child's device camera to download the Kids App from the App Store</li>
+          <li>Once the app is installed, open it and enter the magic code</li>
+        </ol>
+        <p>Your child will stay logged in unless they log out. If they do, you'll need to generate a new magic code from the Parent App.</p>
+      </div>
+    </details>
+
+    <details class="faq-item">
+      <summary>How do I share a child with a co-parent or caregiver?</summary>
+      <div class="faq-answer">
+        <p>Family Sharing is a Family+ feature that lets multiple adults manage the same child. To share:</p>
+        <ol>
+          <li>Tap the menu icon (three dots) on your child's name on the home screen and select "Share"</li>
+          <li>Send the share link, QR code, or magic code to the other adult</li>
+          <li>The other adult opens the link, signs in with Internet Identity, and gains access to the shared child</li>
+        </ol>
+        <p>Shared adults get full access to manage tasks, approve requests, and view the child's balance and history.</p>
+      </div>
+    </details>
+
+    <details class="faq-item">
+      <summary>What are ToDoos, Allowances, and Routines?</summary>
+      <div class="faq-answer">
+        <p>These are premium earning types available with Family+:</p>
+        <ul>
+          <li><strong>ToDoos</strong> &mdash; One-off tasks (e.g. "Tidy the garage") that automatically archive once completed and approved. Unlike regular tasks, they don't stay on the task list.</li>
+          <li><strong>Weekly Allowances</strong> &mdash; Automatic recurring DooCoin payments added to your child's balance each week. Great for teaching regular income concepts.</li>
+          <li><strong>Routines</strong> &mdash; A group of tasks bundled together (e.g. "Morning Routine" might include "Brush teeth", "Make bed", "Get dressed"). Children complete the full routine to earn the coins.</li>
+        </ul>
+      </div>
+    </details>
+
   </div>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <a class="logo" href="/">
+          <img src="logo.svg" alt="DooCoins" class="logo-icon">
+          <span class="logo-text">DooCoins</span>
+        </a>
+      </div>
+      <div class="footer-links">
+        <a href="faq.html">FAQ</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="mailto:hello@doo.co">hello@doo.co</a>
+        <a href="https://twitter.com/DooCoins">@DooCoins</a>
+      </div>
+    </div>
+    <div class="container">
+      <p class="footer-copy">&copy; 2026 DooCoins. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    var burgerToggle = document.getElementById('burgerToggle');
+    var mobileMenu = document.getElementById('mobileMenu');
+    burgerToggle.addEventListener('click', function() {
+      burgerToggle.classList.toggle('active');
+      mobileMenu.classList.toggle('active');
+    });
+    mobileMenu.querySelectorAll('a').forEach(function(link) {
+      link.addEventListener('click', function() {
+        burgerToggle.classList.remove('active');
+        mobileMenu.classList.remove('active');
+      });
+    });
+  </script>
+
 </body>
 </html>

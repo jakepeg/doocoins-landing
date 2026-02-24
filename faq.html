@@ -3,96 +3,168 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Empower your kids with financial literacy and smart saving habits using DooCoins, a reward system that promotes responsibility through Web3 transparency.">
-  <meta name="keywords" content="DooCoins, financial literacy for kids, reward system for children, Web3 technology for families, positive reinforcement app, kids organizational skills, blockchain parenting tools, earning rewards for chores">
+  <meta name="description" content="Frequently asked questions about DooCoins, the family rewards and chore app for kids.">
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="burger-menu.css">
   <link rel="icon" href="logo.svg" type="image/svg+xml">
-  <title>DooCoins Kids Rewards System - FAQ</title>
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RWNWT85LRH"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-RWNWT85LRH');
-</script>
-
+  <title>FAQ — DooCoins</title>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RWNWT85LRH"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-RWNWT85LRH');
+  </script>
 </head>
 <body>
-  <div class="container">
-    <header class="header">
-      <a class="logo-group" href="/">
-        <img src="logo.svg" class="logo-img" alt="doo logo">
-        <h1 class="logo-type">DooCoins</h1>
+
+  <header class="header">
+    <nav class="nav container">
+      <a class="logo" href="/">
+        <img src="logo.svg" alt="DooCoins" class="logo-icon">
+        <span class="logo-text">DooCoins</span>
       </a>
-      <menu class="menu">
-        <li><a href="/">Home</a></li>
-        <li><a href="faq.html" class="active">FAQ</a></li>
-        <li><a href="whitepaper.html">Whitepaper</a></li>
-        <div class="connect-dropdown">
-          <a href="#" class="connect-button">Connect</a>
-          <div class="submenu">
-            <a href="connect-parent.html" class="submenu-button">Parent</a>
-            <a href="connect-kids.html" class="submenu-button">Child</a>
-          </div>
-        </div>
-
-      </menu>
-      <menu class="burger">
-        <input id="menuToggle" type="checkbox"/>
-        <label for="menuToggle"></label>
-        <li><a class="h1" href="/">Home</a></li>
-        <li><a class="h1" href="faq.html">FAQ</a></li>
-        <li><a class="h1" href="whitepaper.html">Whitepaper</a></li>
-        <li><a class="h1" href="connect-parent.html">Parent App Connect</a></li>
-        <li><a class="h1" href="connect-kids.html">Kids App Connect</a></li>
-      </menu>
-    </header>
-
-    <main class="main">
-
-
-
-
-
-      <div class="column column-left">
-
-        <div class="button-container">
-          <a href="faq.html">
-            <button class="active">General FAQ</button>
-          </a>
-          <a href="faq-parents.html">
-            <button>Parent App FAQ</button>
-          </a>
-          <a href="faq-kids.html">
-            <button>Kids App FAQ</button>
-          </a>
-        </div>
-        <h3>What is DooCoins?</h3>
-        <p>DooCoins is a kids rewards app, where children are rewarded for their good behaviour, completing chores, and personal achievements.</p>
-        <h3>Are DooCoins a real crypto currency?</h3>
-        <p>DooCoins are not listed on crypto exchanges. The value of a DooCoin is determined by the parent. In the future we plan to tokenize DooCoins and make a utility token.</p>
-        <h3>How much does DooCoins cost?</h3>
-        <p>DooCoins is free to use, in the future we plan to add premium features and NFT's as a way to monetise the app.</p>
-        <h3>How do I recover my account?</h3>
-        <p>DooCoins uses NFID.one for authentication. To recover your account you will need to goto NFID.one. You will need your recovery phrase.</p>
-        <h3>How do I delete my account?</h3>
-        <p>To delete your account, first remove your children, on the child list screen swipe on the child name and tap delete. Then Go to Settings on your phone > Passwords > nfid.one > Delete Passkey</p>
-        <h3>What technology is DooCoins built on?</h3>
-        <p>DooCoins is a Progressive Web App (PWA), built on the Internet Computer (ICP) blockchain. Authentification (sign-up and sign-in) is handled through NFID.one</p>
-        <h3>Where can I get support or provide feedback?</h3>
-        <p>We are committed to continuously improving our app, and your feedback is essential in shaping its development. If you encounter any issues, have questions, or would like to share your thoughts, please don't hesitate to reach out to us at hello@doo.co</p>
+      <div class="nav-links">
+        <a href="/#features">Features</a>
+        <a href="/#family-plus">Family+</a>
+        <a href="/#how-it-works">How It Works</a>
+        <a href="faq.html" class="active">FAQ</a>
       </div>
-      <div class="column column-right">
-        <a href="https://youtu.be/erIM8kGC7iU" target="_blank" class="banner"><img class="app-image" src="app-youtube.png" alt="App Screenshot Yuotube"></a>
-      </div>
-    </main>
-    <footer class="footer">
-      <p class="small"><a href="https://internetcomputer.org">Built on The Internet Computer</a> | <a href="mailto:hello@doo.co">hello@doo.co</a> | <a href="https://twitter.com/DooCoins">X @DooCoins</a> | <a href="privacy.html">Privacy Policy</a></p>
-    </footer>
+      <a href="/#download" class="btn btn-primary nav-cta">Download</a>
+      <button class="burger-toggle" id="burgerToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="/#features">Features</a>
+      <a href="/#family-plus">Family+</a>
+      <a href="/#how-it-works">How It Works</a>
+      <a href="faq.html">FAQ</a>
+      <a href="/#download" class="btn btn-primary">Download</a>
+    </div>
+  </header>
+
+  <div class="page-header">
+    <div class="container">
+      <h1>Frequently Asked Questions</h1>
+    </div>
   </div>
+
+  <div class="container">
+    <div class="faq-tabs">
+      <a href="faq.html" class="faq-tab active">General</a>
+      <a href="faq-parents.html" class="faq-tab">Parent App</a>
+      <a href="faq-kids.html" class="faq-tab">Kids App</a>
+    </div>
+  </div>
+
+  <div class="faq-content">
+
+    <details class="faq-item">
+      <summary>What is DooCoins?</summary>
+      <div class="faq-answer">
+        <p>DooCoins is a family rewards app that helps parents teach children responsibility, goal-setting, and good habits. Parents create tasks and rewards, children complete tasks to earn virtual DooCoins, and spend them on rewards they care about.</p>
+        <p>There are two apps &mdash; DooCoins Parent (for parents) and DooCoins Kids (a companion app for children).</p>
+      </div>
+    </details>
+
+    <details class="faq-item">
+      <summary>Is DooCoins free?</summary>
+      <div class="faq-answer">
+        <p>Yes! DooCoins is free to download and use. The free version includes unlimited children, tasks, and rewards &mdash; all stored locally on your device with no account required.</p>
+        <p>For families who want more, the optional Family+ subscription unlocks premium features.</p>
+      </div>
+    </details>
+
+    <details class="faq-item">
+      <summary>What is Family+?</summary>
+      <div class="faq-answer">
+        <p>Family+ is our premium subscription for $2.99/month. It includes:</p>
+        <ul>
+          <li><strong>Kids App Access</strong> &mdash; Connect the DooCoins Kids companion app so children can manage tasks and rewards on their own device</li>
+          <li><strong>Cloud Sync</strong> &mdash; Sync your data securely across all your devices</li>
+          <li><strong>Push Notifications</strong> &mdash; Get instant alerts when your child completes a task or claims a reward</li>
+          <li><strong>Family Sharing</strong> &mdash; Share children with co-parents, grandparents, or caregivers</li>
+          <li><strong>ToDoos</strong> &mdash; One-off tasks that archive automatically when completed</li>
+          <li><strong>Weekly Allowances</strong> &mdash; Automatic recurring coin payments</li>
+          <li><strong>Routines</strong> &mdash; Group tasks together (e.g. "Morning Routine")</li>
+          <li><strong>Unlimited Transaction History</strong> &mdash; The free version shows the last 20 transactions per child; Family+ removes this limit</li>
+        </ul>
+      </div>
+    </details>
+
+    <details class="faq-item">
+      <summary>Are DooCoins a real cryptocurrency?</summary>
+      <div class="faq-answer">
+        <p>No. DooCoins are a virtual currency within the app. Their value is decided by each family &mdash; we suggest roughly 10 cents per DooCoin as a starting point, but it's completely up to you.</p>
+      </div>
+    </details>
+
+    <details class="faq-item">
+      <summary>How do I recover my account?</summary>
+      <div class="faq-answer">
+        <p>Family+ accounts are secured with Internet Identity. If you need to recover your account, you will need the recovery phrase you set up when creating your Internet Identity. Visit <a href="https://internetcomputer.org/internet-identity">internetcomputer.org/internet-identity</a> for recovery instructions.</p>
+        <p>Free tier accounts are stored locally on your device and do not have a login, so there is no account to recover. We recommend upgrading to Family+ if you'd like cloud backup and multi-device access.</p>
+      </div>
+    </details>
+
+    <details class="faq-item">
+      <summary>How do I delete my account?</summary>
+      <div class="faq-answer">
+        <p><strong>Free tier:</strong> Your data is stored locally on your device. Deleting the app will remove all your data.</p>
+        <p><strong>Family+ subscribers:</strong> To delete your account and all associated cloud data, please contact us at <a href="mailto:hello@doo.co">hello@doo.co</a> and we will process your request. To cancel your subscription, go to your Apple ID settings and manage your subscriptions from there.</p>
+      </div>
+    </details>
+
+    <details class="faq-item">
+      <summary>What technology is DooCoins built on?</summary>
+      <div class="faq-answer">
+        <p>DooCoins is a native iOS app available on the App Store. Premium data is synced securely via the Internet Computer (ICP) blockchain, providing decentralised cloud storage with no traditional server infrastructure.</p>
+      </div>
+    </details>
+
+    <details class="faq-item">
+      <summary>Where can I get support or provide feedback?</summary>
+      <div class="faq-answer">
+        <p>We'd love to hear from you! Whether you have a question, found a bug, or have a feature suggestion, please reach out to us at <a href="mailto:hello@doo.co">hello@doo.co</a>.</p>
+      </div>
+    </details>
+
+  </div>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <a class="logo" href="/">
+          <img src="logo.svg" alt="DooCoins" class="logo-icon">
+          <span class="logo-text">DooCoins</span>
+        </a>
+      </div>
+      <div class="footer-links">
+        <a href="faq.html">FAQ</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="mailto:hello@doo.co">hello@doo.co</a>
+        <a href="https://twitter.com/DooCoins">@DooCoins</a>
+      </div>
+    </div>
+    <div class="container">
+      <p class="footer-copy">&copy; 2026 DooCoins. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    var burgerToggle = document.getElementById('burgerToggle');
+    var mobileMenu = document.getElementById('mobileMenu');
+    burgerToggle.addEventListener('click', function() {
+      burgerToggle.classList.toggle('active');
+      mobileMenu.classList.toggle('active');
+    });
+    mobileMenu.querySelectorAll('a').forEach(function(link) {
+      link.addEventListener('click', function() {
+        burgerToggle.classList.remove('active');
+        mobileMenu.classList.remove('active');
+      });
+    });
+  </script>
+
 </body>
 </html>
