@@ -280,18 +280,22 @@ ul {
   font-size: 1.15rem;
   line-height: 1.7;
   color: rgba(255, 255, 255, 0.8);
-  margin-bottom: 36px;
+  margin-bottom: 12px;
 }
 
-.hero-phone {
-  flex: 0 0 auto;
+.hero-caption {
+  font-size: 1.15rem;
+  color: var(--teal-light);
+  font-weight: 500;
+  margin-bottom: 32px;
+  min-height: 1.5em;
 }
 
-/* Phone mockup */
+/* Phone mockup (used in features section) */
 
 .phone-mockup {
   width: 280px;
-  border-radius: var(--radius-xl);
+  border-radius: 18px;
   overflow: hidden;
   box-shadow: var(--shadow-xl), 0 0 0 1px rgba(255, 255, 255, 0.1);
   background: var(--bg-body);
@@ -304,6 +308,114 @@ ul {
 
 .phone-mockup-sm {
   width: 260px;
+}
+
+/* =====================
+   HERO SLIDESHOW
+   ===================== */
+
+.hero-slideshow {
+  flex: 0 0 auto;
+}
+
+.slideshow-container {
+  position: relative;
+  height: calc(100vh - 250px);
+  max-height: 700px;
+  aspect-ratio: 1 / 2;
+}
+
+.slide {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  border-radius: 18px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(255, 255, 255, 0.1);
+  opacity: 0;
+  visibility: hidden;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: contain;
+}
+
+/* Notification toast */
+
+.slide-notification {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(255, 255, 255, 0.97);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-radius: 14px;
+  padding: 5px 9px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.18);
+  width: max-content;
+  max-width: 320px;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.notification-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.notification-content {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.3;
+}
+
+.notification-content strong {
+  font-size: 0.7rem;
+  color: #666;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+.notification-content span {
+  font-size: 0.85rem;
+  color: #1a1a1a;
+  font-weight: 500;
+}
+
+/* Slide badge */
+
+.slide-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  padding: 5px 14px 5px 5px;
+  color: var(--white);
+  white-space: nowrap;
+  margin-bottom: 8px;
+}
+
+.badge-icon {
+  width: 28px;
+  height: 28px;
+  border-radius: 7px;
+}
+
+.slide-badge span {
+  font-size: 0.85rem;
+  font-weight: 600;
 }
 
 /* Store badges */
@@ -455,18 +567,21 @@ ul {
 
 .feature-content {
   flex: 1;
+  max-width: 520px;
 }
 
-.feature-label {
-  display: inline-block;
-  background: var(--teal);
-  color: var(--white);
-  font-size: 0.8rem;
+.feature-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--bg-alt);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 20px;
+  padding: 5px 14px 5px 5px;
+  margin-bottom: 12px;
+  color: var(--text-primary);
+  font-size: 0.85rem;
   font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  padding: 4px 12px;
-  border-radius: 4px;
   margin-bottom: 16px;
 }
 
@@ -979,6 +1094,24 @@ ul {
     width: 240px;
   }
 
+  .slideshow-container {
+    max-height: 500px;
+  }
+
+  .slide-notification {
+    max-width: 260px;
+    padding: 8px 12px;
+  }
+
+  .notification-icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .notification-content span {
+    font-size: 0.8rem;
+  }
+
   .section {
     padding: 64px 0;
   }
@@ -1053,6 +1186,49 @@ ul {
   .phone-mockup,
   .phone-mockup-sm {
     width: 220px;
+  }
+
+  .slideshow-container {
+    max-height: 400px;
+  }
+
+  .slide {
+    border-radius: 14px;
+  }
+
+  .slide-notification {
+    max-width: 230px;
+    padding: 7px 10px;
+    gap: 8px;
+    border-radius: 10px;
+  }
+
+  .notification-icon {
+    width: 26px;
+    height: 26px;
+    border-radius: 6px;
+  }
+
+  .notification-content strong {
+    font-size: 0.6rem;
+  }
+
+  .notification-content span {
+    font-size: 0.75rem;
+  }
+
+  .slide-badge {
+    padding: 4px 10px 4px 4px;
+    gap: 6px;
+  }
+
+  .badge-icon {
+    width: 22px;
+    height: 22px;
+  }
+
+  .slide-badge span {
+    font-size: 0.75rem;
   }
 
   .store-badge-text strong {
