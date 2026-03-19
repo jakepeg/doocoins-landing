@@ -120,6 +120,14 @@ You can subscribe from within the app. Apple Family Sharing is supported.
 
 The value of a DooCoin is up to you. We find it works well to set roughly 10 cents = 1 DooCoin, but choose whatever works for your family.
 
+### Delete data in the app
+
+You can delete rewards, tasks, and children directly in the Parent App:
+
+- **Children** — Tap the menu (three dots) next to your child's name and select "Delete"
+- **Tasks** — Tap the menu on a task and select "Delete"
+- **Rewards** — Tap the menu on a reward and select "Delete"
+
 ### How do I approve tasks?
 
 There are two ways to approve tasks:
