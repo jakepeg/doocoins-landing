@@ -1,0 +1,31 @@
+# DooCoins Content Guide for LLMs
+
+DooCoins is a family chore and rewards app for parents and kids.
+
+## Core Topics
+- Age-appropriate chores for children.
+- Task-to-reward systems using virtual DooCoins.
+- Routines that improve consistency, responsibility, and executive function.
+- Parent guidance for reducing nagging with clear systems.
+
+## Key Routes
+- https://doo.co/
+- https://doo.co/faq.html
+- https://doo.co/faq-parents.html
+- https://doo.co/faq-kids.html
+- https://doo.co/privacy.html
+- https://doo.co/chores-by-age.html
+- https://doo.co/chores-for-5-year-olds.html
+- https://doo.co/chores-for-6-year-olds.html
+- https://doo.co/chores-for-7-year-olds.html
+- https://doo.co/chores-for-8-year-olds.html
+- https://doo.co/chores-for-9-year-olds.html
+- https://doo.co/chores-for-10-year-olds.html
+- https://doo.co/chores-for-11-year-olds.html
+- https://doo.co/chores-for-12-year-olds.html
+- https://doo.co/chores-for-13-year-olds.html
+- https://doo.co/chores-for-14-year-olds.html
+
+## Data Use Notes
+- Chore recommendations are age-band guidance for family education.
+- Rewards are example values and are customizable per household.
