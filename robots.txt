@@ -1,4 +1,20 @@
 User-agent: *
 Allow: /
 
+# Specifically invite AI Search & LLM Crawlers
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /  # Allows Gemini to use your content for AI Overviews
+
 Sitemap: https://doo.co/sitemap.xml
